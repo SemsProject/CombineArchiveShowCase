@@ -1,19 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:dcterms="http://purl.org/dc/terms/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:vCard="http://www.w3.org/2006/vcard/ns#"
+	xmlns:dcterm="http://purl.org/dc/terms/"
+	xmlns:prov="http://www.w3.org/ns/prov#"
 	xmlns:pav="http://purl.org/pav/"
-	xmlns:prov="http://www.w3.org/TR/prov-o/"
-	xmlns:bqmodel="http://biomodels.net/model-qualifiers/"
-	xmlns:bqbiol="http://biomodels.net/biology-qualifiers/"
 	xmlns:foaf="http://xmlns.com/foaf/0.1/"
-	xmlns:owl="http://www.w3.org/2002/07/owl"
-	xmlns:ore="http://www.openarchives.org/ore/terms/"
 	xmlns:nie="http://www.semanticdesktop.org/ontologies/2007/01/19/nie#"
-	xmlns:wfprov="http://purl.org/wf4ever/wfprov#" >
+	xmlns:bqmodel="http://biomodels.net/model-qualifiers/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
 
-	<rdf:Description rdf:about=".">
+	<prov:Agent rdf:about="/#lenover">
+		<rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+		<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+		<rdf:type rdf:resource="http://purl.org/dc/elements/1.1/Agent"/>
+		<foaf:givenName>nicolas</foaf:givenName>
+		<foaf:lastName>Le Novère</foaf:lastName>
+		<foaf:mbox rdf:resource="mailto:lenov@ebi.ac.uk"/>
+		<prov:actedOnBehalfOf>
+			<prov:Agent rdf:about="/#ebi">
+				<rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+				<foaf:name>EMBL EBI</foaf:name>
+				<foaf:homepage rdf:resource="http://ebi.ac.uk/"/>
+			</prov:Agent>
+		</prov:actedOnBehalfOf>
+
+	</prov:Agent>
+
+	<rdf:Description rdf:about="/model/BIOMD0000000144.xml">
+		<prov:wasDerivedFrom rdf:resource="http://identifiers.org/biomodels.db/MODEL1509031628"/>
+		<pav:curatedBy rdf:resource="/#lenover" />
 	</rdf:Description>
+
+	<rdf:Description rdf:about="/model/BIOMD0000000144.xml#xpointer(//*[@meta-id=&quot;metaid_0000010&quot;])">
+		<prov:derivedFrom rdf:resource="http://sems.uni-rostock.de/#unknownDataset"/>
+	</rdf:Description>
+
 </rdf:RDF>
 

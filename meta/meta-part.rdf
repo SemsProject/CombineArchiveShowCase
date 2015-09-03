@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:dcterms="http://purl.org/dc/terms/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:vCard="http://www.w3.org/2006/vcard/ns#"
+	xmlns:dcterm="http://purl.org/dc/terms/"
+	xmlns:prov="http://www.w3.org/ns/prov#"
 	xmlns:pav="http://purl.org/pav/"
-	xmlns:prov="http://www.w3.org/TR/prov-o/"
-	xmlns:bqmodel="http://biomodels.net/model-qualifiers/"
-	xmlns:bqbiol="http://biomodels.net/biology-qualifiers/"
 	xmlns:foaf="http://xmlns.com/foaf/0.1/"
-	xmlns:owl="http://www.w3.org/2002/07/owl"
-	xmlns:ore="http://www.openarchives.org/ore/terms/"
 	xmlns:nie="http://www.semanticdesktop.org/ontologies/2007/01/19/nie#"
-	xmlns:wfprov="http://purl.org/wf4ever/wfprov#" >
-
-	<rdf:Description rdf:about=".">
+	xmlns:bqmodel="http://biomodels.net/model-qualifiers/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	
+	<rdf:Description rdf:about="/documentation/Calzone2007.pdf">
+		<dc:hasPart rdf:resource="/documentation/Calzone2007_Figure1B_BOTTOM.jpg"/>
 	</rdf:Description>
+
+	<rdf:Description rdf:about="/documentation/Calzone2007_Figure1B_BOTTOM.jpg">
+		<prov:wasGeneratedBy>
+			<prov:Activity rdf:about="/#extractFigure1b">
+				<prov:associatedWith rdf:resource="/#martinP"/>
+				<prov:qualifiedAssociation>
+					<prov:Association>
+						<prov:agent rdf:resource="/#gimp"/>
+						<prov:hadRole rdf:resource="/#createImage"/>
+					</prov:Association>
+				</prov:qualifiedAssociation>
+				<prov:used rdf:resource="/documentation/Calzone2007.pdf"/>
+			</prov:Activity>
+		</prov:wasGeneratedBy>
+	</rdf:Description>
+
 </rdf:RDF>
 

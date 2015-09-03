@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:dcterms="http://purl.org/dc/terms/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:vCard="http://www.w3.org/2006/vcard/ns#"
+	xmlns:dcterm="http://purl.org/dc/terms/"
+	xmlns:prov="http://www.w3.org/ns/prov#"
 	xmlns:pav="http://purl.org/pav/"
-	xmlns:prov="http://www.w3.org/TR/prov-o/"
-	xmlns:bqmodel="http://biomodels.net/model-qualifiers/"
-	xmlns:bqbiol="http://biomodels.net/biology-qualifiers/"
 	xmlns:foaf="http://xmlns.com/foaf/0.1/"
-	xmlns:owl="http://www.w3.org/2002/07/owl"
-	xmlns:ore="http://www.openarchives.org/ore/terms/"
 	xmlns:nie="http://www.semanticdesktop.org/ontologies/2007/01/19/nie#"
-	xmlns:wfprov="http://purl.org/wf4ever/wfprov#" >
-
-	<rdf:Description rdf:about=".">
+	xmlns:bqmodel="http://biomodels.net/model-qualifiers/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	
+	<rdf:Description rdf:about="/model/BIOMD0000000144.xml#xpointer(/sbml/model)">
+		<bqmodel:describedBy rdf:resource="http://identifiers.org/pubmed/17667953"/>
 	</rdf:Description>
+
+	<rdf:Description rdf:about="/model/calzone_thieffry_tyson_novak_2007.cellml#xpointer(/model)">
+		<bqmodel:describedBy rdf:resource="http://identifiers.org/pubmed/17667953"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="/experiment/Calzone2007-simulation-figure-1B.xml">
+		<bqmodel:describedBy rdf:resource="http://identifiers.org/pubmed/17667953"/>
+	</rdf:Description>
+
 </rdf:RDF>
 

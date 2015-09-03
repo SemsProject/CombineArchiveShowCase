@@ -8,8 +8,10 @@
 	xmlns:bqmodel="http://biomodels.net/model-qualifiers/"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
-	
-	<rdf:Description rdf:about="">
+
+	<rdf:Description rdf:about="/model/BIOMD0000000144.xml#xpointer(//*[@meta-id=&quot;metaid_0000055&quot;])">
+		<bqbiol:hasPart rdf:resource="http://identifiers.org/uniprot/P23572"/>
+		<bqbiol:hasPart rdf:resource="http://identifiers.org/uniprot/P20439"/>
 	</rdf:Description>
 
 </rdf:RDF>
