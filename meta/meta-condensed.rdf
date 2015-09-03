@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dcterm="http://purl.org/dc/terms/"
+         xmlns:prov="http://www.w3.org/ns/prov#"
+         xmlns:pav="http://purl.org/pav/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:nie="http://www.semanticdesktop.org/ontologies/2007/01/19/nie#"
+	 xmlns:bqmodel="http://biomodels.net/model-qualifiers/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+
+  <rdf:Description rdf:about="/model/BIOMD0000000144.xml">
+    <rdf:type rdf:resource="http://www.semanticdesktop.org/ontologies/2007/01/19/nie#DataObject"/>
+    <dcterm:conformsTo rdf:resource="http://identifiers.org/combine.specifications/sbml.level-2.version-1"/>
+    <dcterm:format rdf:resource="http://purl.org/NET/mediatypes/application/pdf"/>
+    <prov:wasDerivedFrom rdf:resource="http://identifiers.org/biomodels.db/MODEL1509031628"/>
+    <pav:curatedBy>
+      <prov:Agent rdf:about="/#lenover">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdf:type rdf:resource="http://purl.org/dc/elements/1.1/Agent"/>
+        <foaf:givenName>nicolas</foaf:givenName>
+        <foaf:lastName>Le Novère</foaf:lastName>
+        <foaf:mbox rdf:resource="mailto:lenov@ebi.ac.uk"/>
+        <prov:actedOnBehalfOf>
+          <prov:Agent rdf:about="/#ebi">
+            <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+            <foaf:name>EMBL EBI</foaf:name>
+            <foaf:homepage rdf:resource="http://ebi.ac.uk/"/>
+          </prov:Agent>
+        </prov:actedOnBehalfOf>
+
+      </prov:Agent>
+    </pav:curatedBy>
+
+  </rdf:Description>
+
+  <prov:Plan rdf:about="/experiment/Calzone2007-simulation-figure-1B.xml">
+    <nie:depends rdf:resource="/model/BIOMD0000000144.xml"/>
+    <bqmodel:describedBy rdf:resource="http://identifiers.org/pubmed/17667953"/>
+    <dc:description></dc:description>
+  </prov:Plan>
+
+  <rdf:Description rdf:about="/documentation/Calzone2007.pdf">
+    <dcterm:hasPart>
+      <rdf:Description rdf:about="/documentation/Calzone2007_Figure1B_BOTTOM.jpg">
+        <prov:wasGeneratedBy>
+          <prov:Activity rdf:about="/#extractFigure1b">
+            <prov:associatedWith rdf:resource="/#martinP"/>
+            <prov:qualifiedAssociation>
+              <prov:Association>
+                <prov:agent rdf:resource="/#gimp"/>
+                <prov:hadRole rdf:resource="/#createImage"/>
+              </prov:Association>
+            </prov:qualifiedAssociation>
+
+            <prov:used rdf:resource="/documentation/Calzone2007.pdf"/>
+          </prov:Activity>
+        </prov:wasGeneratedBy>
+
+      </rdf:Description>
+    </dcterm:hasPart>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="/model/BIOMD0000000144.xml#xpointer(/sbml/model)">
+    <bqmodel:describedBy rdf:resource="http://identifiers.org/pubmed/17667953"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="/model/calzone_thieffry_tyson_novak_2007.cellml#xpointer(/model)">
+    <bqmodel:describedBy rdf:resource="http://identifiers.org/pubmed/17667953"/>
+    <prov:alternateOf rdf:resource="/model/BIOMD0000000144.xml#xpointer(/sbml/model)"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="/model/calzone_2007.png">
+    <prov:alternateOf rdf:resource="/model/calzone_2007.svg"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="/model/sbgn/Calzone2007.gml">
+    <prov:alternateOf rdf:resource="/model/sbgn/Calzone2007.png"/>
+  </rdf:Description>
+
+  <prov:SoftwareAgent rdf:about="/#COPASI">
+    <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COPASI</foaf:name>
+    <pav:version>COPASI 4.15 (Build 95)</pav:version>
+  </prov:SoftwareAgent>
+
+  <prov:SoftwareAgent rdf:about="/#SWT">
+    <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SED-ML WebTool</foaf:name>
+  </prov:SoftwareAgent>
+
+  <prov:Activity rdf:about="/#simulateModelWithCopasi">
+    <prov:associatedWith rdf:resource="/#martin"/>
+    <prov:qualifiedAssociation>
+      <prov:Association>
+        <prov:agent rdf:resource="/#COPASI"/>
+        <prov:hadPlan rdf:resource="/experiment/Calzone2007-simulation-figure-1B.xml"/>
+      </prov:Association>
+    </prov:qualifiedAssociation>
+
+    <prov:used rdf:resource="/model/BIOMD0000000144.xml"/>
+  </prov:Activity>
+
+  <rdf:Description rdf:about="/result/Fig1B-bottom-COPASI.svg">
+    <prov:wasGeneratedBy rdf:resource="/#simulateModelWithCopasi"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="/result/Fig1B-top-COPASI.svg">
+    <prov:wasGeneratedBy rdf:resource="/#simulateModelWithCopasi"/>
+  </rdf:Description>
+
+  <prov:Activity rdf:about="/#simulateModelWithSwt">
+    <prov:associatedWith rdf:resource="/#martin"/>
+    <prov:qualifiedAssociation>
+      <prov:Association>
+        <prov:agent rdf:resource="/#SWT"/>
+        <prov:hadPlan rdf:resource="/experiment/Calzone2007-simulation-figure-1B.xml"/>
+      </prov:Association>
+    </prov:qualifiedAssociation>
+
+    <prov:used rdf:resource="/model/BIOMD0000000144.xml"/>
+  </prov:Activity>
+
+  <rdf:Description rdf:about="/result/Fig1B-bottom-webtools.svg">
+    <prov:wasGeneratedBy rdf:resource="/#simulateModelWithSwt"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="/result/Fig1B-top-webtools.svg">
+    <prov:wasGeneratedBy rdf:resource="/#simulateModelWithSwt"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="/model/BIOMD0000000144.xml#xpointer(//*[@meta-id=&quot;metaid_0000010&quot;])">
+    <prov:derivedFrom rdf:resource="http://sems.uni-rostock.de/#unknownDataset"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="/model/BIOMD0000000144.xml#xpointer(//*[@meta-id=&quot;metaid_0000055&quot;])">
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/uniprot/P23572"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/uniprot/P20439"/>
+  </rdf:Description>
+
+</rdf:RDF>
