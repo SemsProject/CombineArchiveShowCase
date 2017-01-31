@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Written by libSedML v1.1.5591.22638 see http://libsedml.sf.net -->
 <sedML level="1" version="1" xmlns="http://sed-ml.org/">
   <listOfSimulations>
     <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="250" numberOfPoints="1000">
